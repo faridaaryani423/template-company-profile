@@ -117,7 +117,10 @@ p { margin: 0; }
 }
 .nav-inner { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
-.nav-logo-image { width: 72px; height: 72px; object-fit: contain; }
+.nav-logo-image {
+  width: 72px; height: 72px; object-fit: contain;
+  filter: drop-shadow(0 0 0.75px var(--bronze)) drop-shadow(0 0 2px rgba(173,138,79,0.55));
+}
 .nav-logo-text { font-family: Georgia, 'Times New Roman', serif; font-size: 1.35rem; color: var(--ink); letter-spacing: 0.08em; }
 .site-nav.transparent-hero:not(.solid) .nav-links a { color: var(--text-on-ink); }
 
